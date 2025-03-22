@@ -12,9 +12,9 @@ export default function CategoryTitle({ children }: CategoryTitleProps) {
       <Title3>{children}</Title3>
       <Link
         to="/products"
-        className="inline-flex items-center text-gray-600 hover:text-gray-800 font-medium"
+        className="inline-flex items-center text-gray-300 hover:text-gray-800 font-medium"
       >
-        <span>All</span>
+        <span>View All</span>
         <ChevronRightIcon className="w-5 h-5 stroke-2" />
       </Link>
     </div>

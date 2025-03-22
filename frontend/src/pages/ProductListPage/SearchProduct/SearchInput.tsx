@@ -17,14 +17,14 @@ export default function SearchInput({
   };
 
   return (
-    <div className="inline-flex justify-between gap-2 w-full sm:w-80 bg-gray-100 text-gray-900 text-sm rounded-xl border border-gray-300 p-3">
+    <div className="inline-flex justify-between gap-2 w-full sm:w-80 bg-gray-100 text-gray-900 text-sm rounded-3xl border border-gray-300 p-3">
       <MagnifyingGlassIcon className="h-5 w-5" />
       <input
         type="text"
         className="w-full bg-transparent focus:outline-none"
         value={value}
         onChange={handleInputChange}
-        placeholder="Search your drink..."
+        placeholder="Search here..."
       />
       {!!value && (
         <button onClick={onClear} className="text-gray-600 hover:text-gray-900">
