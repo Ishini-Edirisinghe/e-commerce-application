@@ -18,7 +18,7 @@ export default function ProductCardHorizontal({ coffee }: ProductCardProps) {
   return (
     <button
       onClick={handleClick}
-      className="relative flex flex-row bg-white hover:bg-primary-50 border rounded-2xl p-2 ease-in"
+      className="relative flex flex-row bg-gray-100 hover:bg-primary-50 border rounded-2xl p-2 ease-in"
     >
       <img
         src={coffee.image}

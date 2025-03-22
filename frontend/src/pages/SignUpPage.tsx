@@ -84,37 +84,36 @@ export default function SignUpPage() {
       <div className="flex flex-col items-center justify-center w-full h-screen bg-primary p-4">
         <div className="flex flex-col w-full max-w-md bg-gray-100 rounded-3xl p-10 mx-auto">
           <div className="flex items-center gap-3 mb-10 mx-auto">
+          
+            <p className="text-primary">
+              <span className="block text-xl font-thin">Coffee</span>
+              <span className="block text-2xl font-semibold">Shop</span>
+            </p>
             <img
                 src="/images/app-logo.png"
                 alt="App Logo"
                 className="w-20 h-20 rounded-full object-cover"
             />
-            <p className="text-primary">
-              <span className="block text-xl font-thin">Coffee</span>
-              <span className="block text-2xl font-semibold">Shop</span>
-            </p>
           </div>
           <Title1 className="text-primary">Sign Up</Title1>
-          <p className="text-gray-500 font-medium mt-2">Sign up to continue your coffee journey</p>
-
           <div className="mt-6">
             <input
                 type="text"
                 placeholder="Name"
-                className="w-full p-3 mt-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full p-3 mt-4 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-primary"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
             <input
                 type="text"
                 placeholder="Email"
-                className="w-full p-3 mt-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full p-3 mt-4 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-primary"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
             <div className="mt-4">
               <select
-                  className="w-full p-3 pl-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full p-3 pl-3 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-primary"
                   value={isAdmin ? "admin" : "user"} // Convert boolean to string
                   onChange={(e) => setIsAdmin(e.target.value === "admin")} // Convert string to boolean
               >
@@ -125,25 +124,25 @@ export default function SignUpPage() {
             <input
                 type="password"
                 placeholder="Password"
-                className="w-full p-3 mt-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full p-3 mt-4 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-primary"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
             <input
                 type="password"
                 placeholder="Re-Password"
-                className="w-full p-3 mt-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full p-3 mt-4 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-primary"
                 value={rePassword}
                 onChange={(e) => setRePassword(e.target.value)}
             />
             <button
-                className="w-full mt-6 p-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition"
+                className="w-full mt-6 p-3 bg-primary text-white rounded-3xl hover:bg-opacity-90 transition"
                 onClick={handleLogin}
             >
               Sign Up
             </button>
             <p className="text-center text-gray-500 mt-4">
-              <a href="/login" className="text-primary hover:underline">I have an account</a>
+              <a href="/login" className="text-primary hover:underline">Sign In</a>
             </p>
           </div>
         </div>

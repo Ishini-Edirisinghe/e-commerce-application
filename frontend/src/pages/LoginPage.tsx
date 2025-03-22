@@ -61,33 +61,34 @@ export default function LoginPage() {
       <div  className="flex flex-col items-center justify-center w-full h-screen bg-primary p-4">
         <div className="flex flex-col w-full max-w-md bg-gray-100 rounded-3xl p-10 mx-auto">
           <div className="flex items-center gap-3 mb-10 mx-auto">
+
+            <p className="text-primary">
+              <span className="block text-xl font-thin">Bunny & Beans</span>
+              <span className="block text-2xl font-semibold">Café</span>
+            </p>
             <img
                 src="/images/app-logo.png"
                 alt="App Logo"
                 className="w-20 h-20 rounded-full object-cover"
             />
-            <p className="text-primary">
-              <span className="block text-xl font-thin">Bunny & Beans</span>
-              <span className="block text-2xl font-semibold">Café</span>
-            </p>
           </div>
           <div className="mt-6">
             <input
                 type="text"
                 placeholder="Email"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full p-3 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-primary"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
             <input
                 type="password"
                 placeholder="Password"
-                className="w-full p-3 mt-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full p-3 mt-4 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-primary"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
             <button
-                className="w-full mt-6 p-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition"
+                className="w-full mt-6 p-3 bg-primary text-white rounded-3xl hover:bg-opacity-90 transition"
                 onClick={handleLogin}
             >
               {loading ? 'Logging in...' : 'Login'}
