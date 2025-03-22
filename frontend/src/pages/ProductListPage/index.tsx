@@ -4,7 +4,7 @@ import ColdDrinkList from './ColdDrinkList';
 
 export default function ProductListPage() {
   return (
-    <div className="p-3 bg-black">
+    <div className="p-3 bg-primary">
       <SearchProduct />
       <HotDrinkList />
       <ColdDrinkList />

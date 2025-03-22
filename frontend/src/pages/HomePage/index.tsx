@@ -6,7 +6,7 @@ import PopularColdDrinkList from './PopularColdDrinkList';
 
 export default function HomePage() {
   return (
-    <div className="p-3 bg-black">
+    <div className="p-3 bg-primary">
       {/*<UserAddressCard />*/}
       <SearchBox />
       <PopularProductList />
